@@ -1,0 +1,130 @@
+/* ============================= */
+/*         Reset Styles          */
+/* ============================= */
+
+/* Remove default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/*          Body Styles          */
+/* ============================= */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+/* ============================= */
+/*         Container Styles      */
+/* ============================= */
+
+.container {
+    background-color: #3c4048;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* ============================= */
+/*        Heading Styles         */
+/* ============================= */
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* ============================= */
+/*        Input Section Styles   */
+/* ============================= */
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.input-section input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-section button:hover {
+    background-color: #21a1f1;
+}
+
+/* ============================= */
+/*       Countdown Display Styles */
+/* ============================= */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-segment {
+    background-color: #505763;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.time-segment span:first-child {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.time-segment span:last-child {
+    font-size: 0.9em;
+    color: #b0b3b8;
+}
+
+/* ============================= */
+/*        Responsive Design       */
+/* ============================= */
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px 30px;
+    }
+
+    .time-segment {
+        padding: 15px;
+        width: 60px;
+    }
+
+    .countdown {
+        gap: 10px;
+    }
+}
